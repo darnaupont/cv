@@ -26,7 +26,12 @@
       .img-profile {
         max-width: 10rem;
         max-height: 10rem;
-        border: 0.5rem solid fade-out($white, 0.8);
+        border: 0.5rem solid fade-out($white, 0.4);
+        transition: ease-out 1s;
+        &:hover{
+          border: 0.5rem solid fade-out($red, 0.5);
+          transition: ease-in 1s
+        }
       }
     }
     .navbar-collapse {

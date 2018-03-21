@@ -1,6 +1,7 @@
 // Global styling for this template
 
 body {
+  overflow-x:hidden;
   @include body-font;
   padding-top: 54px;
   color: $gray-600;
@@ -39,12 +40,29 @@ h2 {
   @include heading-font;
   font-size: 1.35rem;
 }
-
+.phone{
+  color: $gray-600;
+  &:hover{
+    text-decoration: none;
+  }
+}
+.subtitle {
+    position: absolute;
+    z-index: -1;
+    font-size: 40vh;
+    top: 4rem;
+    opacity: 0.1;
+    text-transform: uppercase;
+    line-height: 0.75;
+    @media (min-width: 992px) {
+          top: 0;
+    }
+}
 .list-social-icons {
   a {
     color: $gray-700;
     &:hover {
-      color: $primary;
+      color: $orange;
     }
     .fa-lg {
       font-size: 1.75rem;
@@ -52,11 +70,32 @@ h2 {
   }
 }
 
+.foundation{
+      vertical-align: top;
+      padding-top:0.55rem;
+}
 .list-icons {
   font-size: 3rem;
+  .foundation-zurb{
+    font-family: 'Open Sans',serif;
+    font-weight: bold;
+    background-color: $gray-600;
+    color: $white;
+    font-size: 1.3rem;
+    padding:0.5rem 0.8rem;
+    margin-top:0.5rem;
+    cursor: context-menu;
+    transition: ease-out 1s;
+    &:hover{
+      transition: ease-out 1s;
+      background-color: $orange;
+    }
+  }
   .list-inline-item i {
+    transition: ease-out 1s;
     &:hover {
-      color: $primary;
+      transition: ease-out 1s;
+      color: $orange;
     }
   }
 }
